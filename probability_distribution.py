@@ -315,7 +315,8 @@ if __name__ == "__main__":
     wr_matrix = [[0 for _ in pd_factors] for _ in rsi_factors]
     sr_matrix = [[0 for _ in pd_factors] for _ in rsi_factors]
     tt_matrix = [[0 for _ in pd_factors] for _ in rsi_factors]
-
+    
+    # grid search
     for i, rsi_factor in enumerate(rsi_factors):
         for j, pd_factor in enumerate(pd_factors):
             df = add_signals_to_df(df=data, pd_factor=pd_factor, rsi_factor=rsi_factor, rsi_length=14)
